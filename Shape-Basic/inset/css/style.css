@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f2f2f2;
+  color: #ccc3c3;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+hr {
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1200px;
+  background-color: #0f021b;
+}
+
+.header {
+  margin: 40px auto 20px auto;
+}
+
+.header__h2 {
+  margin: 40px auto 40px auto;
+}
+
+.shape-box {
+  width: 80%;
+  height: auto;
+  border: 1px solid white;
+}
+
+.content-inset .shapeInset {
+  float: left;
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  shape-outside: inset(2px -1px 146px 4px round 10px) margin-box;
+}
+
+.content-circle .shapeCircle {
+  float: left;
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  shape-outside: circle(41% at 46.5% 99px);
+}
+
+.content-circle2 .shapeCircle2::before {
+  content: "";
+  float: left;
+  width: 250px;
+  height: 150px;
+  border: 1px solid red;
+  shape-outside: circle(50% at left top);
+}
+
+.content-ellipse .shapeEllipse {
+  float: left;
+  width: 100px;
+  height: 200px;
+  border: 1px solid red;
+  shape-outside: ellipse(76.4% 48% at left center);
+}
+
+.content-ellipse2 .shapeEllipse2 {
+  float: left;
+  width: 100px;
+  height: 240px;
+  border: 1px solid red;
+  shape-outside: ellipse(closest-side farthest-side at 30%);
+}
+
+.content-polygon .shapePolygon {
+  float: left;
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  shape-outside: polygon(101px 6px, 199px 143px, 3px 295px);
+}
+
+.content-star .shapeStar {
+  float: left;
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  shape-outside: polygon(31% 48.5%, 0% 34.5%, 40.5% 27%, 54% 0%, 66.5% 27%, 102% 31%, 73.5% 50.5%, 92.5% 89%, 53% 69.5%, 10% 88.5%);
+}/*# sourceMappingURL=style.css.map */

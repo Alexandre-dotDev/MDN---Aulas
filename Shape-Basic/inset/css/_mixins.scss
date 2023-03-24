@@ -1,0 +1,26 @@
+@mixin normalize{
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #f2f2f2;
+        color: #ccc3c3;
+        width: 100vw;
+        height: 100vh;
+        @include flex-center(column);
+        justify-content: flex-start;
+    }
+    hr{
+        margin: 0 auto;
+    }
+
+}
+@mixin flex-center($direction){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}

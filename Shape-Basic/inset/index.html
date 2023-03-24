@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Basic - Inset</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="header">Propriendades de Shape-Basic</h1>
+        
+        <h2 class="header__h2">Inset</h2>
+        <div class="shape-box content-inset">
+            <div class="shapeInset"></div>
+            <p>O inset()tipo define um retângulo, o que pode não parecer muito útil, pois flutuar um item lhe dará uma forma retangular ao redor dele. Já os inset()tipos permitem a definição de offsets, puxando assim o conteúdo sobre a forma.
+            Portanto, inset()leva quatro valores para os valores superior, direito, inferior e esquerdo mais um valor final para border-radius. O CSS abaixo cria uma forma retangular inserida na caixa de referência do elemento flutuante 20 pixels da parte superior e inferior e 10 pixels da esquerda e da direita, com um valor de raio de borda de 10 pixels.
+            </p>
+        </div>
+                
+        <h2 class="header__h2">Circle</h2>
+        <div class="shape-box  content-circle">
+            <div class="shapeCircle"></div>
+            <p>O circle()valor para shape-outsidepode aceitar dois argumentos possíveis. O primeiro é o shape-radius.
+                Ambos os valores circle()e são especificados como aceitando este argumento de . Esse argumento pode ser um comprimento ou uma porcentagem, mas também pode ser uma das palavras-chave ou .ellipse()shape-outside<shape-radius>closest-sidefarthest-side
+                A palavra-chave closest-sideusa o comprimento do centro da forma até o lado mais próximo da caixa de referência. Para círculos, este é o lado mais próximo em qualquer dimensão. Para elipses, este é o lado mais próximo na dimensão do raio.
+                A palavra-chave farthest-sideusa o comprimento do centro da forma até o lado mais distante da caixa de referência. Para círculos, este é o lado mais distante em qualquer dimensão. Para elipses, este é o lado mais distante na dimensão do raio.
+                O segundo argumento é um position. Se omitido, será definido como center. No entanto, você pode usar qualquer posição válida aqui para indicar a posição do centro do círculo.
+                Nosso círculo, portanto, aceita um valor de raio, que pode ser um comprimento, uma porcentagem ou a palavra-chave do lado mais próximo ou do lado mais distante e, opcionalmente, a palavra-chave at seguida por um valor de posição.
+                No exemplo abaixo, criei um círculo em um item com largura de 100 pixels, mais uma margem de 20 pixels. Isso dá uma largura total para a caixa de referência de 140 pixels. Eu dei um valor de 50% para o valor do raio da forma, o que significa que nosso raio é 70px. Em seguida, defino o valor da posição para 30%.
+            </p>
+        </div>
+        
+        <h2 class="header__h2">Exemplo com Before em Circle</h2>
+        <div class="shape-box content-circle2">
+            <div class="shapeCircle2"></div>
+            <p>No exemplo ao vivo, você pode aumentar ou diminuir o tamanho do círculo alterando o tamanho do raio, movendo o círculo com o valor da posição ou definindo uma caixa de referência como fizemos para inset().
+            Como exemplo adicional, se você usar as palavras-chave top leftpara posição, poderá criar um quarto de círculo no canto superior esquerdo da página. O exemplo abaixo usa o conteúdo gerado para criar uma forma de um quarto de círculo para o texto fluir.
+            </p>
+        </div>
+        <h2 class="header__h2">Ellipse</h2>
+        <div class="shape-box content-ellipse">
+            <div class="shapeEllipse"></div>
+            <p>Uma elipse é essencialmente um círculo achatado e, portanto, ellipse()age de maneira muito semelhante, circle()exceto pelo fato de termos que especificar dois raios x e y nessa ordem.
+               Estes podem então ser seguidos por valores de posição como para circle()mover o centro da elipse ao redor. No exemplo abaixo temos uma elipse com raio x de 40%, raio ay de 50% e a posição sendo esquerda. Isso significa que o centro da elipse está na borda esquerda da caixa, dando-nos uma forma de meia elipse para envolver nosso texto. Você pode alterar esses valores para ver como a elipse muda.
+            </p>
+        </div>
+        <h2 class="header__h2">Ellipse - palavra-chave: closest-sidee e farthest-side</h2>
+        <div class="shape-box content-ellipse2">
+            <div class="shapeEllipse2"></div>
+            <p>Os valores de palavra-chave de closest-sidee farthest-sidesão úteis para criar uma elipse rápida com base no tamanho da caixa de referência do elemento flutuante.<br><br>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iste, natus, saepe, tempora est itaque esse dolore eveniet aperiam obcaecati officiis consequuntur eos? Ducimus quod minima beatae minus quaerat non!<br><br>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo reprehenderit voluptate veniam nihil blanditiis sed vel, ab quasi quas consectetur harum facilis esse necessitatibus illo pariatur inventore eveniet iure quibusdam. 
+            </p>
+        </div>
+        <h2 class="header__h2">Polygon</h2>
+        <div class="shape-box content-polygon">
+            <div class="shapePolygon"></div>
+            <p>A forma básica final é a mais complexa e permite a criação de muitas formas laterais por meio da criação de um arquivo polygon(). Esta forma aceita três ou mais pares de valores (um polígono deve desenhar pelo menos um triângulo). Esses valores são coordenadas desenhadas com referência à caixa de referência.<br>
+               No exemplo abaixo, criei uma forma para o texto seguir usando o polygon(), você pode alterar qualquer um dos valores para ver como a forma é alterada.<br>
+               Você pode achar o Firefox Shape Inspector muito útil aqui para criar sua forma de polígono. A captura de tela abaixo mostra a forma destacada na ferramenta.<br>
+               Outro recurso útil é o Clippy - uma ferramenta para criar formas para clip-path, pois os valores para Formas Básicas são os mesmos usados para clip-path.
+            </p>
+        </div>
+        <h2 class="header__h2">Polygon - Star</h2>
+        <div class="shape-box content-star">
+            <div class="shapeStar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptatem commodi incidunt nostrum magnam eius veritatis libero, ducimus laboriosam sapiente impedit quis porro iusto inventore, hic ea velit quisquam! Tempora?
+            Voluptate vitae fugiat doloremque! Totam voluptatibus dolorum quis accusantium necessitatibus explicabo magni, at distinctio quas, tempore ipsam! Incidunt mollitia culpa consequatur atque molestias. Soluta aliquid corrupti nam, excepturi est maiores!
+            Earum, veritatis quod! Error voluptatem debitis deserunt quae nobis ea non repudiandae, soluta expedita nulla. Nesciunt vel deserunt eius odit corporis aperiam. Quis aut praesentium labore beatae perferendis esse commodi.
+            Maiores maxime iure culpa hic cum quis debitis odit corrupti asperiores deleniti nulla eos ex quo temporibus rerum ad incidunt exercitationem quibusdam itaque laborum pariatur, ducimus illo excepturi nesciunt! Sed.
+            Ad nihil iure blanditiis optio! Accusantium id quisquam aliquam nobis facilis, iusto placeat cupiditate rerum, necessitatibus et fugiat. Modi harum quasi itaque enim animi voluptatum sequi a adipisci qui aliquam.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
